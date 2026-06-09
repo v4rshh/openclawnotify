@@ -64,13 +64,18 @@ whatsapp-alert-system/
    COOLDOWN_HOURS=4
    ```
 
-3. Onboard your WhatsApp account into OpenClaw:
+3. Start the OpenClaw Gateway server (runs in the foreground):
    ```bash
-   npx openclaw channels add --channel whatsapp
+   npx openclaw gateway run
    ```
-   Scan the printed QR code with your WhatsApp app (**Settings -> Linked Devices -> Link a Device**).
 
-4. Run the alert script:
+4. Open a second terminal window and login to link your WhatsApp account:
+   ```bash
+   npx openclaw channels login --channel whatsapp --account default
+   ```
+   Scan the printed QR code with your WhatsApp mobile app (**Settings -> Linked Devices -> Link a Device**).
+
+5. Run the alert script:
    ```bash
    python src/main.py
    ```
