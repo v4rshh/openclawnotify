@@ -43,29 +43,27 @@ c:\Users\varsh\Downloads\Flostat\flostat/
 
 ### [Component Name]
 
-#### [NEW] [main.py](file:///c:/Users/varsh/Downloads/Flostat/flostat/src/main.py)
+#### [main.py]
 - Performs configuration loading and handles the polling loop that calls `fetch_device_data()` and `check_device()`.
 
-#### [NEW] [alerts.py](file:///c:/Users/varsh/Downloads/Flostat/flostat/src/alerts.py)
+#### [alerts.py]
 - Contains threshold boundary definitions and the core `check_device` and `dispatch_alert` logic.
 
-#### [NEW] [dynamodb.py](file:///c:/Users/varsh/Downloads/Flostat/flostat/src/dynamodb.py)
+#### [dynamodb.py]
 - Handles data collection interface (currently returning `MOCK_DEVICES`).
 
-#### [NEW] [openclaw_client.py](file:///c:/Users/varsh/Downloads/Flostat/flostat/src/openclaw_client.py)
+#### [openclaw_client.py]
 - Wraps the `npx openclaw` command invocation.
 
-#### [NEW] [cooldown.py](file:///c:/Users/varsh/Downloads/Flostat/flostat/src/cooldown.py)
+#### [cooldown.py]
 - Manages the deduplication and cooldown logic.
 
-#### [NEW] [requirements.txt](file:///c:/Users/varsh/Downloads/Flostat/flostat/requirements.txt)
+#### [requirements.txt]
 - Specifies python-dotenv and boto3.
 
-#### [NEW] [README.md](file:///c:/Users/varsh/Downloads/Flostat/flostat/README.md)
+#### [README.md]
 - Complete instruction manual for onboarding OpenClaw, connecting WhatsApp, configuring `.env`, and running the modular application.
 
-#### [DELETE] [notification_service.py](file:///c:/Users/varsh/Downloads/Flostat/flostat/notification_service.py)
-- Delete the old script file.
 
 ---
 
